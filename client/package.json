@@ -1,0 +1,27 @@
+{
+  "name": "pcb",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:3001/",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "braintree-dropin-react": "0.0.2",
+    "braintree-web-drop-in": "^1.9.1",
+    "jwt-decode": "^2.2.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "react-scripts": "1.0.17"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "react-bootstrap": "^0.31.5",
+    "react-router": "^4.2.0",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.2.2"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "pcb-server",
+  "version": "1.0.0",
+  "description": "API server for pbc client",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"cd client && npm start\"",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Reed Topham",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "braintree": "^2.4.0",
+    "express": "^4.16.2",
+    "express-jwt": "^5.3.0",
+    "jsonwebtoken": "^8.1.0",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
