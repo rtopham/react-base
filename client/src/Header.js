@@ -22,6 +22,7 @@ handleLogout(){
     let loginNavItem;
     let signupNavItem;
     let loggedin=Auth.loggedIn();
+    
 
     if(loggedin){
       loginNavItem = (<NavItem onClick={this.handleLogout}>Logout</NavItem>);

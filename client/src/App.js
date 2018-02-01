@@ -6,6 +6,9 @@ import Public from './Public.js';
 import SignUpUser from './Signup.js';
 import UserLogin from './Login.js';
 import Coolstuff from './Coolstuff.js';
+import UploadImage from './UploadImage.js';
+import ShowImage from './ShowImage.js';
+import Images from './Images.js';
 
 const NoMatch = () => <p>Page Not Found</p>;
 
@@ -23,6 +26,10 @@ return(
     <Route exact path = '/login' component ={UserLogin}/>
     <Route exact path = '/signup' component = {SignUpUser}/>
     <Route exact path = '/coolstuff' component ={Coolstuff}/>
+    <Route exact path = '/upload' component ={UploadImage}/>
+    <Route exact path = '/images' component ={Images}/>
+    <Route path = '/images/:id' component = {ShowImage}/>
+    
     <Route path="*" component={NoMatch} />
   </Switch>
 </Router>

@@ -14,12 +14,12 @@ export default function withAuth(AuthComponent) {
         componentWillMount() {
 
             if (!Auth.loggedIn()) {
-//                console.log(this.props.history);
+//                console.log(this.props.match);
                 this.props.history.replace('/public')
             }
             else {
                 try {
-                    
+//                    console.log(this.props.match);
                     const profile = Auth.getProfile()
                     this.setState({
                         user: profile
@@ -36,7 +36,7 @@ export default function withAuth(AuthComponent) {
  
             if (this.state.user) {
                 return (
-                    <AuthComponent history={this.props.history} user={this.state.user} />
+                    <AuthComponent user={this.state.user} {...this.props} />
                 )
             }
             else {
